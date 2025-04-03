@@ -1,10 +1,10 @@
 use core::{
     borrow::Borrow,
     fmt,
-    hash::{BuildHasher, Hash},
+    hash::{BuildHasher, BuildHasherDefault, Hash},
 };
 
-use hash32::{BuildHasherDefault, FnvHasher};
+use hash32::FnvHasher;
 
 use crate::indexmap::{self, IndexMap};
 
